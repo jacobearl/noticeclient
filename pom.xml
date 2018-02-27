@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ailu.paas</groupId>
+    <artifactId>notice-client</artifactId>
+    <version>1.3-RELEASE</version>
+
+
+    <distributionManagement>
+        <repository>
+            <id>notice_release</id>
+            <name>release</name>
+            <url>http://nexus.breadenglish.com/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>notice_snapshot</id>
+            <name>snapshot</name>
+            <url>http://nexus.breadenglish.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.46</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
